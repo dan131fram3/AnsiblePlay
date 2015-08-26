@@ -1,4 +1,4 @@
-# Usage
+#Usage
 
 Clone this repository and run the following command:
 
