@@ -1,0 +1,13 @@
+---
+# Debian-specific tasks
+
+- name: Install leafpad
+  apt: name=leafpad state=present
+
+- name: Configure Leafpad Core
+  template: src=etc_leafpad_leafpad.conf dest=/etc/leafpad/leafpad.conf owner=root group=root mode=0644
+  notify: restart leafpad
+
+- name: Copy the default leafpad site config so we can have monitoring
+  copy: src=default.conf dest=/etc/leafpad/conf.d/default.conf owner=root group=root mode=0644
+  notify: restart leafpad

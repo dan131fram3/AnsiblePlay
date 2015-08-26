@@ -1,0 +1,6 @@
+---
+- name: restart leafpad
+  service: name=leafpad enabled=yes state=restarted
+
+- name: reload leafpad
+  service: name=leafpad state=reloaded

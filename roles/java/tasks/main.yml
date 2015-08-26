@@ -1,0 +1,7 @@
+---
+# tasks file for java
+- name: Install JAVA - we can't do anything without it
+  apt: name=openjdk-7-jdk state=present
+
+- name: Add JAVA_HOME to the system profile
+  template: src=etc_profile.d_java_home.sh.j2 dest=/etc/profile.d/java_home.sh owner=root group=root

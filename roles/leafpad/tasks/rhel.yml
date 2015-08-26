@@ -1,0 +1,9 @@
+---
+# RHEL Specific tasks
+
+- name: Install leafpad
+  yum: name=nginx state=present
+
+- name: Copy the default leafpad config so we can have monitoring
+  copy: src=default.conf dest=/etc/leafpad/conf.d/default.conf owner=root group=root mode=0644
+  notify: restart leafpad
