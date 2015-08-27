@@ -4,6 +4,7 @@
   sudo: True
   roles:
     - nginx
-#    - leafpad
+    - leafpad
+    - leafpad-undo
     - java
-
+    - kodi
