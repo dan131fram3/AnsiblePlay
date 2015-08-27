@@ -3,8 +3,8 @@
 - hosts: all
   sudo: True
   roles:
-    - nginx
+#    - nginx
     - leafpad
-    - leafpad-undo
+#    - leafpad-undo
     - java
     - kodi
