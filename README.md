@@ -14,8 +14,10 @@ Once you have entered these, it should install run and install all the roles.
 If you get an error then follow these steps:
 
 1) 'cd /etc/ansible'
+
 2) 'sudo nano hosts'
-3) Once in the 'hosts' file, comment any hosts out as this will cause the problem
+
+3) Once in the 'hosts' file, comment any hosts out as this will cause the problem.
 
 You should now be good so run the command again...
 
