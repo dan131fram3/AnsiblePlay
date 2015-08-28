@@ -13,7 +13,7 @@
 - name: Install KODI
   apt: name=kodi state=present
 
-- name: " Setup | apt | ensure added repos"
-  sudo: Yes
-  apt_repository: repo={{ kodi_pkg_apt_repo }}
+#- name: " Setup | apt | ensure added repos"
+#  sudo: Yes
+#  apt_repository: repo={{ kodi_pkg_apt_repo }}
 
