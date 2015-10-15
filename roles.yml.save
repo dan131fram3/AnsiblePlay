@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  sudo: True
+  roles:
+#    - nginx
+#    - leafpad
+#    - leafpad-undo
+#    - java
+     - kodi
+    

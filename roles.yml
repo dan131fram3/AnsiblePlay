@@ -3,17 +3,19 @@
 - hosts: hosts
   sudo: True
   roles:
-    - nginx
-    - leafpad
+#    - nginx
+#    - leafpad
 #    - leafpad-undo
-    - java
+#    - java
     - kodi
 #    - purgeall
 #    - chrome
+#    - shutdown 
 
-- hosts: servers
-  sudo: True
-  roles: 
-      - java
-      - leafpad
-      - kodi
+
+#- hosts: servers
+#  sudo: True
+#  roles: 
+#      - java
+#      - leafpad
+#      - kodi

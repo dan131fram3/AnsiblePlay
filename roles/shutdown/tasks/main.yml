@@ -1,0 +1,5 @@
+---
+
+- name: Shutdown remote machine
+  sudo: Yes
+  command: /sbin/shutdown -t now
